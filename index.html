@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="option-area">
+      <p><label for="options">Enter options for randomiser:</label></p>
+      <textarea id="options" name="options" rows="10" cols="50">Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu</textarea>
+      <p><label for="number-of-winners">How many winners:</label>
+      <input id="number-of-winners" name="number-of-winners" type="text" value="3"> </p>
+      <p><label for="transisiton-time">Transition time for each result to appear in seconds:</label>
+        <input id="transisiton-time" name="transisiton-time" type="text" value="3"> </p>
+      <p><label for="time-between-results">How long until next result appears in seconds:</label>
+          <input id="time-between-results" name="time-between-results" type="text" value="3"> </p>
+      <p></p>
+      <input type="checkbox" id="multiple-wins" name="multiple-wins" value="yes"> 
+      <label for="multiple-wins">Can an option win multiple times:</label>
+      <br>      <br>
+      <input type="radio" id="reveal1" name="reveal" value="show">
+      <label for="reveal1">Show 1 by 1</label><br>
+      <input type="radio" id="reveal2" name="reveal" value="remove">
+      <label for="reveal2">Remove 1 by 1</label><br>  
+      <p><button id="btn-start">Start!</button> <button id="btn-reset">Reset!</button></p>
+  </div>
+  <div id="game-area">
+    <div>
+      <h2 id="winners-container">WINNER(s)</h2>
+    </div>
+    <div>
+      <ul id="winners-list"></ul>
+    </div>
+  </div>
+  <div>
+    <h2 id="recent-winners-container" >Recently won:</h2>
+    <ul id="previous-winners-list"></ul>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
